@@ -30,7 +30,7 @@ async function loadSchemaFromFile(schemaFile: string): Promise<any> {
         format: 'esm',
         target: 'es2022',
       });
-      const tempFile = `${tmpdir()}/mockgen-schema-${Date.now()}-${Math.random().toString(36).slice(2)}.mjs`;
+      const tempFile = `${tmpdir()}/fauxapi-schema-${Date.now()}-${Math.random().toString(36).slice(2)}.mjs`;
       writeFileSync(tempFile, result.code, 'utf-8');
       const module = await import(pathToFileURL(tempFile).href);
       try {
@@ -78,7 +78,7 @@ const generateCommand = new Command('generate')
 const program = new Command();
 
 program
-  .name('mockgen')
+  .name('fauxapi')
   .description('A schema-based mock JSON generator')
   .version('1.0.0');
 

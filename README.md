@@ -1,4 +1,4 @@
-# MockGen
+# FauxAPI
 
 A schema-based mock JSON generator with CLI and API mocking capabilities.
 
@@ -14,7 +14,7 @@ A schema-based mock JSON generator with CLI and API mocking capabilities.
 ## Installation
 
 ```bash
-npm install -g mockgen
+npm install -g fauxapi
 ```
 
 ## Usage
@@ -22,7 +22,7 @@ npm install -g mockgen
 ### Programmatic API
 
 ```typescript
-import { defineMock, generate, string, number, email } from 'mockgen';
+import { defineMock, generate, string, number, email } from 'fauxapi';
 
 const userSchema = defineMock({
   id: number(),
@@ -42,10 +42,10 @@ const users = generate(userSchema, { count: 5, seed: 123 });
 Generate from a schema file:
 
 ```bash
-mockgen generate path/to/schema.js
-mockgen generate path/to/schema.mjs
-mockgen generate path/to/schema.json
-mockgen generate path/to/schema.ts  # requires esbuild installed
+fauxapi generate path/to/schema.js
+fauxapi generate path/to/schema.mjs
+fauxapi generate path/to/schema.json
+fauxapi generate path/to/schema.ts  # requires esbuild installed
 ```
 
 Example `schema.mjs`:
@@ -63,13 +63,13 @@ export default defineMock({
 Generate and print one object:
 
 ```bash
-mockgen generate ./schema.mjs
+fauxapi generate ./schema.mjs
 ```
 
 Generate five deterministic objects:
 
 ```bash
-mockgen generate ./schema.mjs --count 5 --seed 42
+fauxapi generate ./schema.mjs --count 5 --seed 42
 ```
 
 Options:
@@ -92,7 +92,7 @@ Options:
 `generate` now supports nested object schemas and nested arrays within schema values.
 
 ```ts
-import { defineMock, generate, string, number, boolean } from 'mockgen';
+import { defineMock, generate, string, number, boolean } from 'fauxapi';
 
 const schema = defineMock({
   user: {
