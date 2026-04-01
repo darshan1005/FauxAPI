@@ -1,12 +1,12 @@
 {
-  "name": "mockgen",
+  "name": "mockify",
   "version": "1.0.0",
   "description": "A schema-based mock JSON generator with CLI and API mocking capabilities",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "bin": {
-    "mockgen": "./dist/cli.cjs"
+    "mockify": "./dist/cli.cjs"
   },
   "type": "module",
   "scripts": {
@@ -31,12 +31,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/mockgen.git"
+    "url": "https://github.com/darshan1005/mockgen.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/mockgen/issues"
+    "url": "https://github.com/darshan1005/mockgen/issues"
   },
-  "homepage": "https://github.com/yourusername/mockgen#readme",
+  "homepage": "https://github.com/darshan1005/mockgen#readme",
   "devDependencies": {
     "@types/node": "^20.0.0",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
