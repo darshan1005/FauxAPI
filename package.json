@@ -1,12 +1,12 @@
 {
-  "name": "mockify",
+  "name": "fauxapi",
   "version": "1.0.0",
   "description": "A schema-based mock JSON generator with CLI and API mocking capabilities",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "bin": {
-    "mockify": "./dist/cli.cjs"
+    "fauxapi": "./dist/cli.cjs"
   },
   "type": "module",
   "scripts": {
@@ -27,16 +27,16 @@
     "api",
     "schema"
   ],
-  "author": "Your Name",
+  "author": "Darshan Battula",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/darshan1005/mockgen.git"
+    "url": "https://github.com/darshan1005/FauxAPI.git"
   },
   "bugs": {
-    "url": "https://github.com/darshan1005/mockgen/issues"
+    "url": "https://github.com/darshan1005/FauxAPI/issues"
   },
-  "homepage": "https://github.com/darshan1005/mockgen#readme",
+  "homepage": "https://github.com/darshan1005/FauxAPI#readme",
   "devDependencies": {
     "@types/node": "^20.0.0",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
